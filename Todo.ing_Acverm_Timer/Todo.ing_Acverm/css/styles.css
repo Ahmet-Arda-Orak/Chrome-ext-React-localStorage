@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 320px;
+    background-color: #161925;
+    padding: 0px 10px;
+}
+/*===================TIMER===================*/
+
+.timer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timer-input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #161925;
+    color: #fff;
+    width: 40px;
+}
+.timer-count{
+    font-size: 40px;   
+    color: #fff;
+    text-align: center;
+    background-color: #23395B;
+    padding: 3px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+/*==== Buttons ====*/
+
+.timer-btn-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-control{
+    border: none;
+    outline: none;
+    background-color: #23395B;
+    padding: 7px;
+    color: #fff;
+    font-size: 15px;
+}
+.btn-control:hover{
+    background-color: #fff;
+    color: #161925;
+    transition: 0.5s ease;
+    transition-delay: 0.2s;
+}
+
+.btn-set{
+    border-radius: 0px 10px 10px 0px;
+}
+.btn-pause{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.timer-count-box{
+    margin-bottom: -40px;
+}
+
+/*===========SCROLLBAR============*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #406E8E; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2A363B; 
+  }
+
+/*===========TASKS============*/
+
+.header-text{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: -25px;    
+    padding-left: 20px;
+}
+
+span{
+    font-size: 12px;
+    padding-right: 2px;
+}
+
+/*==== Task Input ====*/
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    color: #fff;
+}
+
+.task-input {
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.1px solid white;
+    outline: none;
+    background-color: #161925;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/*==== Task List ====*/
+
+.tasks-list-div {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    overflow-y: scroll;
+    background-image: url("../images/task_bg.png");
+    background-size: cover;
+    margin-bottom: 2rem;
+
+}
+
+.task-div {
+    display: flex;
+    justify-content: space-between;
+    margin: .1rem 0.1rem;
+    color: #fff;
+    background-color: #161925;
+    padding: 5px;
+}
+
+.task-div:not(:last-child) {
+    padding: 7px;
+    border: solid 0.1px #8EA8C3;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.task-text {
+    text-align: left;
+    justify-self: left;
+    width: 170px;
+    word-wrap: break-word;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #2a363b80;
+    color: #fff;
+}
+
+.task-controls {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.task-clear-div {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 1.5rem 0;
+    color: #fff;
+}
+
+/*==== Task Btns ====*/
+
+.task-btn {
+    min-width: 4rem;
+    border-bottom: 0.1px solid white;
+    border-left: 0.1px solid white;
+    border-top: none;
+    border-right: none;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    padding: .7rem .9rem;
+    background-color: #161925;
+    color: #fff;
+    font-size: 12px;
+}
+
+.task-btn:not(:last-child) {
+    border-right : solid 1px black;
+    color: #fff;
+    font-size: 12px;
+}
+
+.task-btn:hover, .task-btn:focus {
+    background-color: #fff;
+    color: #161925;
+    transition: 0.5s ease;
+    transition-delay: 0.2s;
+    font-size: 12px;
+}
+
+.task-input, .task-btn-edit {
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.task-btn-submit, .task-btn-do {
+
+    color: #fff;
+    font-size: 12px;
+}
+
+.task-btn-clear {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/*==========================================*/
+
+.dot-size{
+    padding: none;
+    font-size: 15px;
+    margin: none;
+    background-color: #161925;
+    border: none;
+}
+
+
+/*==========================================*/
+
+
+.increm_btn{
+    margin:0;
+    float: left;
+    height:50%;
+    padding:0;
+    width:30px;
+    font-size:10px;
+}
+.btn__control{
+    height:25px;
+    margin-bottom:-10px;
+    padding:0px;
+}
+/* Id's */
+#input_section{
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+#timer_btns{
+    background-color: blue;
+    display:flex;
+    margin:0;
+    flex-direction: column;
+}
+#btn__pause{
+    width:52px;
+    font-size:7px;
+}
+#btn__reset-all-timers{
+    width:52px;
+    font-size:7px;
+}
+#btn__set-all-timers{
+    width:104px;
+}
+label{
+    color: white;
+}

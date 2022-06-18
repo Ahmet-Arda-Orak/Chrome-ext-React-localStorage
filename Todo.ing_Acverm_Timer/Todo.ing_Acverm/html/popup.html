@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href = "../css/styles.css">
+	<title>Acverm Todo.ing</title>
+</head>
+	<body>
+
+			<div class="header-box">
+				<p class="header-text">Tasks <span> by Acverm</span></p>
+			</div>
+
+			<!-- Input Start-->
+			<div class="input-div">
+				<input type="text" maxlength="50" id="task-input" class="task-input" placeholder="New Task"/>
+				<button id="task-submit-btn" class="task-btn task-btn-submit">➕</button>
+			</div>
+			<!-- Input End-->
+
+			<!-- Tasks Start-->
+			<div class="tasks-list-div" id="tasksList"></div>
+			<!-- Tasks End-->
+
+			<!-- ///////////TIMER/////////// -->
+			
+			<div class="timer-count-box" id = "timer__display__01">
+				<p class="timer-count" id ="timer-01__time"></p>
+			</div>
+
+			<!-- Timer Inputs Start -->
+			<div id="timers">
+				<div class="timer-box" id="timer-01" >
+					<div id="input_section">
+						<input class="timer-input"  type="number" min="00" max ="99" id="timer01_min" 
+						maxlength="2" value="00">
+					</div>
+
+					<div id="input_section">
+						<input class="timer-input"  type="number" min="00" max ="99" id="timer01_sec"
+							maxlength="2" value="00">
+					</div>
+				</div>
+			</div>
+			<!-- Timer Inputs End -->
+
+			<!-- Timer Buttons Start -->
+			<div id="timer__control" style="margin-bottom:20px;">
+				<div class="timer-btn-box" id="btns">
+						<button id= "btn__pause" class ="btn-control btn-pause">Pause</button>
+						<button id="btn__reset-all-timers" class ="btn-control">Reset</button>
+						<button id="btn__set-all-timers" class ="btn-control btn-set">Set</button> 
+				</div>
+			</div>
+			<!-- Timer Buttons End -->
+    
+		<!-- scripts -->
+		<script src="../js/popup.js"></script>
+	</body>
+</html>
